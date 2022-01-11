@@ -1,0 +1,19 @@
+
+{% extends "layout.html" %}
+{% block body %}
+    <h1> <br/> <br/> <br/>
+        Answer the Questions: </h1>
+    <form action="/question" method="POST">
+        <label for="age"> Enter Age (age must be between 10 and 80) </label>
+        <input type="text" id="age" name="age"> <br/>
+        <label for="chestpain"> Enter the Level of Pain (age must be between 1 and 10) </label>
+        <input type="text" id="chestpain" name="chestpain"> <br/>
+        <label for="bloodpressure"> Enter Blood Pressure (age must be between 100 and 200) </label>
+        <input type="text" id="bloodpressure" name="bloodpressure"> <br/>
+        <label for="cholestrol"> Enter Cholestrol Level (age must be between 100 and 270) </label>
+        <input type="text" id="cholestrol" name="cholestrol"> <br/>
+        <label for="heartrate"> Enter Heart Rate (age must be between 60 and 200) </label>
+        <input type="text"  id="heartrate" name="heartrate"> <br/>
+        <input type="submit">
+    </form>
+{% endblock %}
